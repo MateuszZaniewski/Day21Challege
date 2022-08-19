@@ -1,0 +1,537 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 62.5%;
+}
+
+.hidden {
+    display: none;
+}
+
+nav{
+    display: flex;
+    background-color: #2E323F;
+    color: white;
+}
+
+.navBox{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    font-size: clamp(20px, 2vw, 24px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoBox img{
+    height: 100%;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.logoBoxHamburger img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.logoBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 0 auto;
+}
+
+.navigationBox ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    padding: 0;
+}
+
+.navigationBox {
+    margin: 0 0 3rem 0;
+}
+
+.registerBox ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap:  1rem;
+    align-items: center;
+    padding: 0;
+}
+
+.registerBox ul > li + li {
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    background-color: #A59678;
+    color: white;
+}
+
+.registerBox ul li:hover,
+.navigationBox ul li:hover,
+.registerBox ul li:focus,
+.navigationBox ul li:focus{
+    opacity: 0.3;
+}
+
+.main {
+    background-color: #3B4050;
+    padding-bottom: 2rem;
+}
+
+.main__twoColorSpan{
+    font-size: clamp(33px, 8vw, 50px);
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.span__color1{
+    color: white;
+    margin-right: 10px;
+}
+
+.span__color2 {
+    color: #A59678;
+}
+
+.main__twoP{
+    width: 80%;
+    margin: 0 auto;
+    font-size: clamp(20px, 2vw, 28px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.p__first {
+    text-align: center;
+    color: #6F737F;
+}
+
+.p__second {
+    background-color: #A59678;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    margin-top: 1rem;
+}
+
+.second__section{
+    background-color: #f0f4f8;
+    padding-bottom: 2rem;
+}
+
+.second__section__box{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.second__section__box h2 {
+    font-size: clamp(20px, 2.5vw, 31px);
+    text-align: center;
+    color: #A59678;
+}
+
+.second__section__box p {
+    color: #6F737F;
+    font-size: clamp(24px, 2vw, 18px);
+    text-align: center;
+}
+
+.section__thirdBox{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.leftBox h2{
+    color: #A59678;
+    text-align: center;
+    font-size: clamp(20px, 2.5vw, 31px);
+}
+
+.leftBox p {
+    text-align: center;
+    font-size: clamp(20px, 2vw, 28px);
+    text-align: left;
+}
+
+.imageBox img{
+    width: 100%;
+}
+
+.rightBox__box {
+    background-color: #3B4050;
+    color: white;
+    padding: 2rem 5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.rightBox__box  h2{
+    font-size: clamp(20px, 2.5vw, 25px);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.rightBox__box p {
+    font-size: clamp(17px, 2.5vw, 25px);
+    text-align: center;
+}
+
+.section__four {
+    background-color: #2E323F;
+    padding: 1rem 0;
+}
+
+.section__fourBox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section__fourBox h3 {
+    font-size: clamp(20px, 2.5vw, 31px);
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footerLeftBox p {
+    color: white;
+    font-size: clamp(17px, 2.5vw, 25px);
+    text-align: center;
+}
+
+.footerLeftBox h4 {
+    text-align: center;
+}
+
+.footerBox h4 {
+    color: #A59678;
+    font-size: clamp(20px, 2.5vw, 31px);
+}
+
+.footerBoxes ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.footerBoxes ul li {
+    color: white;
+    font-size: clamp(17px, 2.5vw, 25px);
+    text-align: center;
+    padding: 0.25rem 0;
+    text-align: left;
+}
+
+.footerRightBoxes {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+.footerBoxes ul li:hover,
+.footerBoxes ul li:focus{
+    opacity: 0.3;
+}
+
+.logoBoxBoxOver700 {
+    display: none;
+}
+
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    .navigationBox {
+        display: flex;
+        flex-direction: row wrap;
+        margin: 0;
+    }
+
+    .navigationBox ul {
+        flex-direction: row;
+    }
+
+    .registerBox {
+        display: flex;
+    }
+
+    .registerBox ul {
+        flex-direction: row;
+    }
+
+    .mobile__first h2,
+    .efficient h2,
+    .done__right h2{
+        text-align: left;
+    }
+
+    .mobile__first p,
+    .efficient p,
+    .done__right p{
+        text-align: left;
+    }
+
+    .logoBoxHamburger {
+        display: none;
+    }
+
+    .logoBox {
+        justify-content: center;
+    }
+
+    .navSection {
+        display: flex;
+        flex-direction: row nowrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logoBoxBox {
+        display: none;
+    }
+
+    .logoBoxBoxOver700 {
+        display: flex;
+        align-items: center;
+    }
+
+    .p__first{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .second__section__box {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .leftBox p{
+        width: 80%;
+        margin: 1rem auto;
+        text-align: left;
+    }
+
+    .imageBox {
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .section__thirdBox{
+        width: 100%;
+    }
+
+    .rightBox {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+        margin: 0 auto;
+        gap: 2em;
+        align-items: stretch;
+    }
+
+    .rightBox__box {
+        width: 50%;
+        padding: 0.25rem 0.25rem;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__fourBox {
+        width: 100%;
+    }
+
+
+    .section__fourBox p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footerLeftBox {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .footerRightBoxes {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+
+
+    .footerBoxes ul li {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1001px) {
+
+    .navigationBox {
+        display: flex;
+        flex-direction: row wrap;
+        margin: 0;
+    }
+
+    .navigationBox ul {
+        flex-direction: row;
+    }
+
+    .registerBox {
+        display: flex;
+    }
+
+    .registerBox ul {
+        flex-direction: row;
+    }
+
+    .logoBoxHamburger {
+        display: none;
+    }
+
+    .logoBox {
+        justify-content: center;
+    }
+
+    .navSection {
+        display: flex;
+        flex-direction: row nowrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .logoBoxBox {
+        display: none;
+    }
+
+    .logoBoxBoxOver700 {
+        display: flex;
+        align-items: center;
+    }
+
+    .main__twoColorSpan {
+        width: 70%;
+    }
+
+    .p__first{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .second__section__box {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .mobile__first h2,
+    .efficient h2,
+    .done__right h2{
+        text-align: left;
+    }
+
+    .mobile__first p,
+    .efficient p,
+    .done__right p{
+        text-align: left;
+    }
+
+    .leftBox p{
+        width: 80%;
+        margin: 1rem auto;
+        text-align: left;
+    }
+
+    .imageBox {
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .section__thirdBox{
+        width: 100%;
+    }
+
+    .rightBox {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 90%;
+        margin: 0 auto;
+        gap: 2em;
+        align-items: stretch;
+    }
+
+    .rightBox__box {
+        width: 50%;
+        padding: 0.25rem 0.25rem;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__fourBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section__fourBox p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footerLeftBox {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .footerRightBoxes {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+        
+    }
+
+    .footerRightBoxes ul li {
+        text-align: left;
+    }
+
+}
